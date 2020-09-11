@@ -1,18 +1,15 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import Login from "./components/Login"
 import "./App.css";
-import stylesheets from './components/styles';
+
+// import stylesheets from './components/styles';
 
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Welcome to React</h2>
+      <div className="App-container">
+      <Login></Login>
       </div>
-      <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </p>
     </div>
   );
 }

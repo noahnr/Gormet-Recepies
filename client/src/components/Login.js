@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
 
-class FormPage extends Component {
-    state = { }
-render () {
+const FormPage = () => {
+
+return (
 <MDBContainer>
   <MDBRow>
     <MDBCol md="6">
@@ -21,7 +21,8 @@ render () {
     </MDBCol>
   </MDBRow>
 </MDBContainer>
+);
 };
-};
+
 
 export default FormPage;
