@@ -1,14 +1,13 @@
 const mongoose = require("mongoose");
-
 const Schema = mongoose.Schema;
 
-let recipes = new Schema({
-    name: {
-        type: String
-    },
-    age: {
-        type: Number
-    }
+const bookSchema = new Schema({
+    title: { type: String, required: true },
+    author: { type: String, required: true },
+    synopsis: String,
+    date: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model("recipes", recipes);
+const Book = mongoose.model("Book", bookSchema);
+
+module.exports = Book;
