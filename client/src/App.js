@@ -16,7 +16,7 @@
 import React, { Component } from "react";
 import Login from "./components/Login"
 import SignUp from "./components/SignUp"
-import "./App.css";
+import "../src/App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
 
@@ -54,4 +54,4 @@ function App() {
 // }
 
 
-// export default App;
+export default App;
