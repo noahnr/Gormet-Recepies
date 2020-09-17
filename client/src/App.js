@@ -36,6 +36,9 @@ function App() {
     </Router>
   );
 }
+
+export default App;
+
 //   return (
 //     <div className="App">
 //       <div className="App-header">
@@ -48,4 +51,3 @@ function App() {
 //     </div>
 //   );
 // }
-export default App;
