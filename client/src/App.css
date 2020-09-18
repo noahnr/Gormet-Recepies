@@ -11,9 +11,11 @@
   padding: 20px;
   width: 200px;
   height: 150px;
-  position: fixed; /* or absolute */
+  position: fixed;
   top: 50%;
   left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
   
 }
 
@@ -28,8 +30,10 @@
   padding: 20px;
   width: 200px;
   height: 150px;
-  position: fixed; /* or absolute */
+  position: fixed;
   top: 50%;
   left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
 
 }
