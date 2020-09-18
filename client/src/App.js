@@ -16,7 +16,8 @@
 import React, {Component} from "react";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
-import Contacts from "./components/Contacts"
+import Contacts from "./components/Contacts";
+import Home from "./pages/Home";
 import "./App.css";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Nav from "./components/Nav";
@@ -30,7 +31,8 @@ class App extends Component {
           <Nav />
 
           <Switch>
-            <Route exact path="/" component={Login} />
+            <Route exact path="/" component={Home} />
+            <Route path="/login" component={Login} />
             <Route path="/signup" component={SignUp} />
           </Switch>
           <Contacts />

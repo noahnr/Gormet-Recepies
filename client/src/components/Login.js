@@ -8,10 +8,10 @@ class Login extends React.Component {
         <MDBRow>
           <MDBCol md="6">
             <form>
-              <p className="h5 text-center mb-4">Sign in</p>
+              <p className="h5 text-center mb-4">Enter credentials to login</p>
               <div className="grey-text">
                 <MDBInput
-                  label="Type your email"
+                  label="Enter email address"
                   icon="envelope"
                   group
                   type="email"
@@ -20,7 +20,7 @@ class Login extends React.Component {
                   success="right"
                 />
                 <MDBInput
-                  label="Type your password"
+                  label="Enter password"
                   icon="lock"
                   group
                   type="password"
