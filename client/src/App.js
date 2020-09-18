@@ -3,7 +3,6 @@
 // import "./App.css";
 // import stylesheets from './components/styles';
 // import Axios from 'axios'
-
 // function App() {
 //   const url =  'https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}';
 //   const APP_ID = "1b660772";
@@ -19,26 +18,26 @@ import SignUp from "./components/SignUp"
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
-
 // import stylesheets from './components/styles';
-
 function App() {
   return (
     <Router>
-    <div>
-    <Nav />
-    <Switch>
-      <Route exact path={["/", "/login"]}>
-        <Login />
-      </Route>
-      <Route exact path="/login/signup">
-        <SignUp />
-      </Route>
-    </Switch>
-    </div>
+      <div>
+        <Nav />
+        <Switch>
+          <Route exact path={["/", "/login"]}>
+            <Login />
+          </Route>
+          <Route exact path="/login/signup">
+            <SignUp />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }
+
+export default App;
 
 //   return (
 //     <div className="App">
@@ -52,6 +51,7 @@ function App() {
 //     </div>
 //   );
 // }
+
 
 
 export default App;
