@@ -12,8 +12,6 @@
 //     const result = await Axios.get(url);
 //     console.log(result)
 //   }
-<<<<<<< HEAD
-=======
 import React, { Component } from "react";
 import Login from "./components/Login"
 import SignUp from "./components/SignUp"
@@ -40,7 +38,6 @@ function App() {
 }
 
 export default App;
->>>>>>> ac0db35fc54fc4d654021d476c1100c841d8f497
 
 //   return (
 //     <div className="App">
@@ -54,7 +51,3 @@ export default App;
 //     </div>
 //   );
 // }
-
-
-
-export default App;
