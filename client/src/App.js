@@ -17,7 +17,7 @@
 import React, { Component } from "react";
 import Login from "./components/Login"
 import SignUp from "./components/SignUp"
-import "../src/App.css";
+import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
 // import stylesheets from './components/styles';
