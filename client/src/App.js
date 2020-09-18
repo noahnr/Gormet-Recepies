@@ -16,6 +16,7 @@
 import React, {Component} from "react";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import Contacts from "./components/Contacts"
 import "./App.css";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Nav from "./components/Nav";
@@ -32,6 +33,7 @@ class App extends Component {
             <Route exact path="/" component={Login} />
             <Route path="/signup" component={SignUp} />
           </Switch>
+          <Contacts />
         </div>
       </Router>
     );
