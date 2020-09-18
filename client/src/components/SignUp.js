@@ -7,7 +7,7 @@ return (
 <MDBContainer>
   <MDBRow>
     <MDBCol md="6">
-      <form>
+      <form className="mainSignup">
         <p className="h5 text-center mb-4">Sign Up</p>
         <div className="grey-text">
           <MDBInput label="Type your email" icon="envelope" group type="email" validate error="wrong"
