@@ -14,13 +14,14 @@
 //   }
 
 import React, {Component} from "react";
-import Login from "./components/Login";
-import SignUp from "./components/SignUp";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 import Contacts from "./components/Contacts";
 import Home from "./pages/Home";
 import "./App.css";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Nav from "./components/Nav";
+import Header from "./components/Header";
 // import stylesheets from './components/styles';
 
 class App extends Component {
@@ -29,7 +30,7 @@ class App extends Component {
       <Router>
         <div>
           <Nav />
-
+          <Header />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/login" component={Login} />
