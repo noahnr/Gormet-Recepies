@@ -3,7 +3,6 @@
 // import "./App.css";
 // import stylesheets from './components/styles';
 // import Axios from 'axios'
-
 // function App() {
 //   const url =  'https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}';
 //   const APP_ID = "1b660772";
@@ -13,13 +12,13 @@
 //     const result = await Axios.get(url);
 //     console.log(result)
 //   }
+
 import React, {Component} from "react";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import "./App.css";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Nav from "./components/Nav";
-
 // import stylesheets from './components/styles';
 
 class App extends Component {
