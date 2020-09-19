@@ -13,13 +13,13 @@
 //     console.log(result)
 //   }
 
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Contacts from "./components/Contacts";
 import Home from "./pages/Home";
 import "./App.css";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Recipes from "./pages/Recipes"
