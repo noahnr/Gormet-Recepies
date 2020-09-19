@@ -7,7 +7,7 @@ class SignUp extends React.Component {
       <MDBContainer>
         <MDBRow>
           <MDBCol md="6">
-            <form>
+            <form className="mainSignup">
               <p className="h5 text-center mb-4">Enter email and password to register</p>
               <div className="grey-text">
                 <MDBInput

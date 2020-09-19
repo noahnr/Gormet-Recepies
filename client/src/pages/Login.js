@@ -7,7 +7,7 @@ class Login extends React.Component {
       <MDBContainer>
         <MDBRow>
           <MDBCol md="6">
-            <form>
+            <form className="mainLogin">
               <p className="h5 text-center mb-4">Enter credentials to login</p>
               <div className="grey-text">
                 <MDBInput

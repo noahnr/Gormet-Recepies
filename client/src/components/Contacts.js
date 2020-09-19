@@ -3,7 +3,7 @@ import {MDBBtn} from "mdbreact";
 
 function Contact() {
     return (
-        <footer>
+        <footer className="contactFooter">
             <h3>Contact Us:</h3>
             <br></br>
             <div className="contact-content">

@@ -4,7 +4,7 @@ import {MDBBtn} from "mdbreact";
 
 function Nav() {
   return (
-    <nav>
+    <nav className="mainNav">
       <ul>
         <li>
           <MDBBtn href="/">Log Out</MDBBtn>
