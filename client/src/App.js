@@ -6,48 +6,44 @@
 // function App() {
 //   const url =  'https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}';
 //   const APP_ID = "1b660772";
-//   const YOUR_APP_KEY = 
+//   const YOUR_APP_KEY =
 //   "8b4a7a21e724774796e8f3be6a73493d";
 //   const getData =  async ()=> {
 //     const result = await Axios.get(url);
 //     console.log(result)
 //   }
+
 import React, { Component } from "react";
-import Login from "./components/Login"
-import SignUp from "./components/SignUp"
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import Contacts from "./components/Contacts";
+import Home from "./pages/Home";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Recipes from "./pages/Recipes"
 // import stylesheets from './components/styles';
-function App() {
-  return (
-    <Router>
-      <div>
-        <Nav />
-        <Switch>
-          <Route exact path={["/", "/login"]}>
-            <Login />
-          </Route>
-          <Route exact path="/login/signup">
-            <SignUp />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div>
+          <Nav />
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/login" component={Login} />
+            <Route path="/signup" component={SignUp} />
+            <Route path="/recipes" component={Recipes} />
+          </Switch>
+          <Contacts />
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
 
-//   return (
-//     <div className="App">
-//       <div className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <h2>Gourmet Reciepies </h2>
-//       </div>
-//       <p className="App-intro">
-//         To get started, edit <code>src/App.js</code> and save to reload.
-//       </p>
-//     </div>
-//   );
-// }
