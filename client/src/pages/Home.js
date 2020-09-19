@@ -20,9 +20,9 @@ class Home extends React.Component {
         totalSlides={3}
       >
         <Slider>
-          <Slide index={0}><img src="https://i.imgur.com/6Q6JyhA.jpg" alt="nachos" width="300" height="500px"></img> Beef and Chicken Fajita Nachos</Slide>
-          <Slide index={1}><img src="https://i.imgur.com/FcZ6xe0.jpg" alt="ribs" width="300"  height="500px"></img>Honey Cajun Style Pork Ribs</Slide>
-          <Slide index={2}><img src="https://i.imgur.com/P9yBoXl.jpg" alt="sopapilla" width="300"  height="500px"></img>Handmade Sopapilla</Slide>
+          <Slide index={0}><img src="https://i.imgur.com/6Q6JyhA.jpg" class="active" alt="nachos" width="300" height="500px"></img> Beef and Chicken Fajita Nachos</Slide>
+          <Slide index={1}><img src="https://i.imgur.com/FcZ6xe0.jpg" class="active" alt="ribs" width="300"  height="500px"></img>Honey Cajun Style Pork Ribs</Slide>
+          <Slide index={2}><img src="https://i.imgur.com/P9yBoXl.jpg" class="active" alt="sopapilla" width="300"  height="500px"></img>Handmade Sopapilla</Slide>
         </Slider>
         <ButtonBack>Back</ButtonBack>
         <ButtonNext>Next</ButtonNext>
