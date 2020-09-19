@@ -1,4 +1,19 @@
+.mainNav{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  
+ 
+}
 
+.mainNav * {
+  display: inline;
+}
 
 .mainLogin {
   border-radius: 1px;
@@ -37,3 +52,18 @@
   margin-left: -100px;
 
 }
+
+.contactFooter{
+ 
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;   /* Height of the footer */
+  background:white;
+
+}
+
+.contactFooter * {
+  display: inline;
+
+} 
