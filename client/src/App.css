@@ -1,5 +1,7 @@
 .mainNav{
   background-color: white;
+  color: #ffa8B6 ;
+  font-size: 10;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,6 +11,10 @@
   align-items: center;
   
  
+}
+
+.mainNav a{
+  color: #ffa8B6;
 }
 
 .mainNav * {
