@@ -7,7 +7,7 @@ function Nav() {
     <nav>
       <ul>
         <li>
-          <MDBBtn href="/home">Log Out</MDBBtn>
+          <MDBBtn href="/">Log Out</MDBBtn>
         </li>
         <br></br>
         <li>
