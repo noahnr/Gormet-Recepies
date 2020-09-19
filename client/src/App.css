@@ -18,8 +18,19 @@
 }
 
 .mainNav * {
-  display: inline;
+  display: inline-flex;
+  width: 100%;
+  float: left;
+  
 }
+.carousel{
+  display: grid;
+}
+
+.carousel * {
+  display: inline;
+
+} 
 
 .mainLogin {
   border-radius: 1px;
@@ -71,5 +82,8 @@
 
 .contactFooter * {
   display: inline;
+  display: inline-flex;
+  width: 25%;
+  float: left;
 
 } 
