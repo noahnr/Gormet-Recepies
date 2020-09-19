@@ -28,7 +28,7 @@ class Login extends React.Component {
                 />
               </div>
               <div className="text-center">
-                <MDBBtn>Login</MDBBtn>
+                <MDBBtn href="/recipes">Login</MDBBtn>
                 <MDBBtn href="/signup">Sign Up</MDBBtn>
               </div>
             </form>
