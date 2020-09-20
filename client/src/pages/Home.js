@@ -6,7 +6,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 class Home extends React.Component {
     render() {
         return(
-            <MDBContainer>
+            <MDBContainer className="carousel">
             <h1>Welcome Folks!</h1>
                 <p>Please sign up to view available recipes. If already a member, please log in.</p>
                 <br></br>
@@ -19,6 +19,7 @@ class Home extends React.Component {
         naturalSlideHeight={40}
         totalSlides={3}
       >
+
         <Slider>
           <Slide index={0}><img src="https://i.imgur.com/6Q6JyhA.jpg" class="mySlides" alt="nachos" width="300" height="500px"></img><div class="text"> Beef and Chicken Fajita Nachos</div></Slide>
           <Slide index={1}><img src="https://i.imgur.com/FcZ6xe0.jpg" class="mySlides" alt="ribs" width="300"  height="500px"></img><div class="text">Honey Cajun Style Pork Ribs</div></Slide>
