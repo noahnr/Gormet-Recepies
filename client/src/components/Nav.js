@@ -19,7 +19,7 @@ function Nav() {
         </li>
         <br></br>
         <li>
-          <Link
+          {/* <Link
             className="link"
             activeClass="active"
             to="contacts"
@@ -29,11 +29,14 @@ function Nav() {
             duration={500}
           >
             Contact Us
-          </Link>
+          </Link> */}
         </li>
       </ul>
     </nav>
   );
 }
+
+
+
 
 export default Nav;
