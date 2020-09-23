@@ -1,7 +1,5 @@
 import React from "react";
 import API from "../utils/API";
-import Results from "../components/Results";
-import SearchForm from "../components/SearchForm";
 import Nav from "../components/Nav"
 
 class Recipes extends React.Component {
@@ -52,11 +50,7 @@ class Recipes extends React.Component {
                     <p>Email: {currentUserEmail}</p>
                     <p>You have reached your news feed! Search your recipe!</p>
                 </div>
-                <SearchForm handleFormChange={this.handleFormChange} handleSearchClick={this.handleSearchClick} />
-                {
-                    (this.state.recipeData.length > 0) ?
-                        <Results recipeData={this.state.recipeData} path={this.props.match.path} /> : null
-                }
+
             </ >
         );
     }
