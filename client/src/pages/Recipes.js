@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import API from "../utils/API";
+
 // import Results from "../components/Results";
 // import SearchForm from "../components/SearchForm";
 import Nav from "../components/Nav";
 // import RecipeSearcher from "../components/RecipeSearcher"
 import Search from "../components/Search"
 
+import Nav from "../components/Nav"
+import style from "../App.css"
 
 class Recipes extends React.Component {
 
