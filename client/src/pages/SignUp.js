@@ -28,7 +28,7 @@ class SignUp extends React.Component {
                 />
               </div>
               <div className="text-center">
-                <MDBBtn>Submit</MDBBtn>
+                <MDBBtn className="button" href="/login">Submit</MDBBtn>
               </div>
             </form>
           </MDBCol>

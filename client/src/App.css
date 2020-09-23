@@ -9,36 +9,48 @@
   height: 80px;
   display: flex;
   align-items: center;
-  
- 
 }
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  color: white;
+  font-size: 19px;
   position: absolute;
   bottom: 8px;
   width: 100%;
-  text-align: center;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
 }
 .mainNav a{
   color: #ffa8B6;
 }
-
+.button:hover {
+  background-color: white; /* Green */
+  border: none;
+  color: red;
+  padding: 10px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 50%;
+}
 .mainNav * {
   display: inline-flex;
   width: 100%;
   float: left;
   
 }
-.carousel{
+/* .carousel{
   display: grid;
 }
 
 .carousel * {
   display: inline;
 
-} 
+}  */
 
 .mainLogin {
   border-radius: 1px;
@@ -77,21 +89,36 @@
   margin-left: -100px;
 
 }
-
-.contactFooter{
- 
-  position:absolute;
-  bottom:0;
-  width:100%;
-  height:60px;   /* Height of the footer */
-  background:white;
-
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
+.column{
+  float: left;
+  width: 25%;
+}
+.left{
+  text-align:left;
+  float:left;
+  }
+  .right{
+  float:right;
+  text-align:right;
+  }
+  .centered{
+  text-align:center;
+  }
+  .container {
+    margin-bottom: 50px;
+    height: 500px;
+    text-align: center;
+  }
+/* 
 .contactFooter * {
   display: inline;
   display: inline-flex;
   width: 25%;
   float: left;
 
-} 
+}  */
