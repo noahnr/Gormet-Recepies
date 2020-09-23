@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withOktaAuth } from '@okta/okta-react';
-import { MDBBtn } from "mdbreact";
 import Keyframes from '@keyframes/core';
 import { MDBContainer, MDBBtn } from "mdbreact";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
@@ -32,21 +31,6 @@ export default withOktaAuth(class Home extends Component {
       <button className="stdBtn" onClick={this.login}>Login</button>;
 
     return (
-      <div className="mainLanding">
-        {/* <Link to='/'>Home</Link><br />
-        <Link to='/Recipes'>Recipes</Link><br /> */}
-        {/* {button} */}
-
-<span class="button--bubble__container">
-  <a href="/Login" class="button button--bubble">
-    Please Login 
-  </a>
-  <span class="button--bubble__effect-container">
-   
-  </span>
-</span>
-</div>
-
       <>
         <div className="carousel">
           <h1>Welcome Folks!</h1>
