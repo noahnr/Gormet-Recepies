@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import API from "../utils/API";
+
+// import Results from "../components/Results";
+// import SearchForm from "../components/SearchForm";
+import Nav from "../components/Nav";
+// import RecipeSearcher from "../components/RecipeSearcher"
+import Search from "../components/Search"
+
 import Nav from "../components/Nav"
 import style from "../App.css"
 
 class Recipes extends React.Component {
+
     state = {
         currentUsername: '',
         currentUserEmail: ''
@@ -40,6 +48,7 @@ class Recipes extends React.Component {
             })
     };
 
+
     render() {
         const { currentUserEmail, currentUserName } = this.state;
 
@@ -51,7 +60,7 @@ class Recipes extends React.Component {
                     <p>Email: {currentUserEmail}</p>
                     <p>You have reached your news feed! Search your recipe!</p>
                 </div>
-
+                <Search />
             </ >
         );
     }
