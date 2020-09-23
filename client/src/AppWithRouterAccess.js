@@ -24,13 +24,13 @@ export default withRouter(class AppWithRouterAccess extends Component {
         // pkce={false}
 
         return (
-            <Security issuer='https://dev-621097.okta.com/oauth2/default'
-                clientId='0oa10z2ywmdRqHeOZ4x7'
+            <Security issuer='https://dev-781909.okta.com/oauth2/default'
+                clientId='0oa1195gipJZlUspx4x7'
                 redirectUri={window.location.origin + '/implicit/callback'}
                 onAuthRequired={this.onAuthRequired} >
                 <Route path='/' exact={true} component={Home} />
                 <SecureRoute path='/Recipes' component={Recipes} />
-                <Route path='/login' render={() => <Login baseUrl='https://dev-621097.okta.com' />} />
+                <Route path='/login' render={() => <Login baseUrl='https://dev-781909.okta.com' />} />
                 <Route path='/implicit/callback' component={LoginCallback} />
             </Security>
         );
