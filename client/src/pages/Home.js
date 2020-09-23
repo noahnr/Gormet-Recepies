@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withOktaAuth } from '@okta/okta-react';
+import style from "../App.css"
 
 export default withOktaAuth(class Home extends Component {
   constructor(props) {
@@ -25,7 +26,7 @@ export default withOktaAuth(class Home extends Component {
       <button onClick={this.login}>Login</button>;
 
     return (
-      <div>
+      <div className="mainLanding">
         <Link to='/'>Home</Link><br />
         <Link to='/Recipes'>Recipes</Link><br />
         {button}
