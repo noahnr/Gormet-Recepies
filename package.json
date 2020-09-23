@@ -36,6 +36,7 @@
 		"react-dom": "^16.4.1",
 		"react-router-dom": "^4.3.1",
 		"react-scripts": "^3.4.3",
+		"uuid": "^8.3.0",
 		"with-router": "^1.0.1"
 	}
 }
