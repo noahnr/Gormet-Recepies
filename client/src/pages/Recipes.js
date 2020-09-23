@@ -1,6 +1,7 @@
 import React from "react";
 import API from "../utils/API";
 import Nav from "../components/Nav"
+import style from "../App.css"
 
 class Recipes extends React.Component {
     state = {
