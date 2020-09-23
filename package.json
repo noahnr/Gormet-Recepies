@@ -21,6 +21,7 @@
 		"nodemon": "^1.18.7"
 	},
 	"dependencies": {
+		"@keyframes/core": "^2.0.10",
 		"@okta/okta-react": "^1.4.1",
 		"@okta/okta-signin-widget": "^4.4.4",
 		"ansi-regex": "^5.0.0",
