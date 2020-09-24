@@ -5,7 +5,7 @@ export default {
         return axios.get("/api/recipe");
     },
     searchRecipe: (title) => {
-        return axios.post("/search", {title: title});
+        return axios.post("/search", { title: title });
     },
     addRecipe: (recipeData) => {
         return axios.post("/api/recipe", recipeData);

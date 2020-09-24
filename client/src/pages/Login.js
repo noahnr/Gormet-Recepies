@@ -1,43 +1,39 @@
-import React from "react";
-import {MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn} from "mdbreact";
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import OktaSignInWidget from './SignInWidget';
+import { withOktaAuth } from '@okta/okta-react';
+import style from "../App.css"
 
-class Login extends React.Component {
-  render() {
-    return (
-      <MDBContainer>
-        <MDBRow>
-          <MDBCol md="6">
-            <form className="mainLogin">
-              <p className="h5 text-center mb-4">Enter credentials to login</p>
-              <div className="grey-text">
-                <MDBInput
-                  label="Enter email address"
-                  icon="envelope"
-                  group
-                  type="email"
-                  validate
-                  error="wrong"
-                  success="right"
-                />
-                <MDBInput
-                  label="Enter password"
-                  icon="lock"
-                  group
-                  type="password"
-                  validate
-                />
-              </div>
-              <div className="text-center">
-                <MDBBtn className="button" href="/recipes">Login</MDBBtn>
-                <br></br>
-                <MDBBtn className="button" href="/signup">Sign Up</MDBBtn>
-              </div>
-            </form>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-    );
+export default withOktaAuth(class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.onSuccess = this.onSuccess.bind(this);
+    this.onError = this.onError.bind(this);
   }
-}
 
-export default Login;
+  onSuccess(res) {
+    if (res.status === 'SUCCESS') {
+      return this.props.authService.redirect({
+        sessionToken: res.session.token
+      });
+    } else {
+      // The user can be in another authentication state that requires further action.
+      // For more information about these states, see:
+      //   https://github.com/okta/okta-signin-widget#rendereloptions-success-error
+    }
+  }
+
+  onError(err) {
+    console.log('error logging in', err);
+  }
+
+  render() {
+    if (this.props.authState.isPending) return null;
+    return this.props.authState.isAuthenticated ?
+      <Redirect  to={{ pathname: '/' }} /> :
+      <OktaSignInWidget
+        baseUrl={this.props.baseUrl}
+        onSuccess={this.onSuccess}
+        onError={this.onError} />;
+  }
+});
