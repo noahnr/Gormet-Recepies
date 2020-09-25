@@ -9,22 +9,34 @@
   height: 80px;
   display: flex;
   align-items: center;
-  
- 
 }
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  color: white;
+  font-size: 19px;
   position: absolute;
   bottom: 8px;
   width: 100%;
-  text-align: center;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
 }
 .mainNav a{
   color: #ffa8B6;
 }
-
+.button:hover {
+  background-color: white; /* Green */
+  border: none;
+  color: red;
+  padding: 10px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 50%;
+}
 .mainNav * {
   display: inline-flex;
   width: 100%;
@@ -95,39 +107,42 @@
 } */
 
 
-
-.contactFooter{
- 
-  position:absolute;
+.footer{
   bottom:0;
   width:100%;
-  height:60px;   /* Height of the footer */
-  background:white;
-
+  height: 40px;
 }
-
-.contactFooter * {
-  display: inline;
-  display: inline-flex;
-  width: 25%;
+.column{
   float: left;
+  width: 25%;
+}
+.left{
+  text-align:left;
+  float:left;
+  }
+  .right{
+  float:right;
+  text-align:right;
+  }
+  .centered{
+  text-align:center;
+  }
+  .container {
+    height: 700px;
+    text-align: center;
+    padding: 20px;
 
-} 
-
-/*  */
-/* $dark-blue: #222;
-$green: #90feb5;
-$action-color: $green; */
+  }
 
 * {
   box-sizing: border-box;
 }
 
-div{
+/* div{
   display: block;
   height: 100%;
   animation: hue-rotate 10s linear infinite;
-}
+} */
 
 .button {
   -webkit-font-smoothing: antialiased;
