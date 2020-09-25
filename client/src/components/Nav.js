@@ -1,6 +1,9 @@
+
+
 // import React from "react";
 // import { Link } from "react-router-dom";
 // import { MDBBtn } from "mdbreact";
+
 
 // function Nav() {
 //   return (
@@ -37,6 +40,7 @@
 // }
 
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom';
 
 

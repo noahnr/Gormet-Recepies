@@ -65,13 +65,13 @@
   text-transform: uppercase;
 }
 
-/* .stdBtn{
+.stdBtn{
   background-color: rgba(81,226,245,1);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
-} */
+}
 
  
 /* 
@@ -116,11 +116,13 @@
   object-fit: cover
 }
 
-/* .imgSlider{
-  width: 100%; 
-  height: 100%;  
-  object-fit: cover
-} */
+.imgSlider{
+  min-width: 100%;
+    height: auto;
+    min-width: 100%;
+    height: auto;
+}
+
 
 .recipies {
   display: flex;
@@ -139,7 +141,19 @@
   top: 0; left: 0; bottom: 0; right: 0;
   
 }
+.cardContainer{
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(75, 75, 75, .07);
+  z-index: 1;
+}
 
+.cardBody{
+  display: inline-block;
+  float: left;
+  width: 310px;
+}
 
 
 .contactFooter{
@@ -150,6 +164,10 @@
   height:60px;   /* Height of the footer */
   background:white;
 
+}
+
+.cardContainer {
+  padding: 2px 16px;
 }
 
 .contactFooter * {
