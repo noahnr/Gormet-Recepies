@@ -49,8 +49,7 @@ export default withOktaAuth(
             <div className="carousel">
               <h1>Welcome Folks!</h1>
               <p>
-                Please sign up to view available recipes. If already a member,
-                please log in.
+               Please login to search available recipes
               </p>
               {/* <div class="logbtn">
                 <MDBBtn className="button" href="/login">
@@ -125,74 +124,8 @@ export default withOktaAuth(
               </CarouselProvider>
             </div>
           </div>
-          {/* <div>
-            <Link to="/">Home</Link>
-            <br />
-            <Link to="/Recipes">Recipes</Link>
-            <br />
-            {button}
-          </div> */}
-          {/* <div class="footer">
-            <div class="row">
-              <h3>Contact Us:</h3>
-              <div class="column">
-                <h4>Rodolfo Guana</h4>
-                <MDBBtn className="button" href="https://github.com/rgauna">
-                  GitHub
-                </MDBBtn>
-                <br></br>
-                <MDBBtn className="button" href="mailto: rudy.gauna@gmail.com">
-                  Email
-                </MDBBtn>
-              </div>
-              <div class="column">
-                <h4>Noah Soukup</h4>
-                <MDBBtn className="button" href="https://github.com/noahnr">
-                  GitHub
-                </MDBBtn>
-                <br></br>
-                <MDBBtn
-                  className="button"
-                  href="mailto: noahsoukupraesch@gmail.com"
-                >
-                  Email
-                </MDBBtn>
-              </div>
-              <div class="column">
-                <h4>Christopher James Carreon</h4>
-                <MDBBtn className="button" href="https://github.com/CCARREON16">
-                  GitHub
-                </MDBBtn>
-                <br></br>
-                <MDBBtn
-                  className="button"
-                  href="mailto: mrwiggles6545@yahoo.com"
-                >
-                  Email
-                </MDBBtn>
-              </div>
-              <div class="column">
-                <h4>Joseph Arocha</h4>
-                <MDBBtn
-                  className="button"
-                  href="https://github.com/hozerpffp2009"
-                >
-                  GitHub
-                </MDBBtn>
-                <br></br>
-                <MDBBtn
-                  className="button"
-                  href="mailto: hozerpffp2009@gmail.com"
-                >
-                  Email
-                </MDBBtn>
-              </div>
-            </div>
-          </div> */}
         </>
       );
     }
   }
 );
-
-//noahsoukupraesch@gmail.com
