@@ -32,7 +32,7 @@ export default withOktaAuth(class Home extends Component {
 
     return (
       <>
-        <div className="carousel">
+        <div className="homeContainer">
           <h1>Welcome Folks!</h1>
           <p>Please sign up to view available recipes. If already a member, please log in.</p>
           <br></br>
@@ -43,7 +43,7 @@ export default withOktaAuth(class Home extends Component {
           <div class="signbtn">
             <MDBBtn className="button" href="/signup">Sign Up</MDBBtn>
           </div>
-          <div class="container">
+          <div className="imgSlider"> 
             <CarouselProvider
               naturalSlideWidth={100}
               naturalSlideHeight={40}
@@ -61,11 +61,11 @@ export default withOktaAuth(class Home extends Component {
             </CarouselProvider>
           </div>
         </div>
-        <div>
+        {/* <div>
           <Link to='/'>Home</Link><br />
           <Link to='/Recipes'>Recipes</Link><br />
           {button}
-        </div>
+        </div> */}
       </>
     );
   }

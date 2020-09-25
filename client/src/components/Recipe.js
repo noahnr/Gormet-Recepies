@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import RecipeInfo from "./Recipeinfo";
+import style from "../App.css"
 
 const Recipe = ({ recipe }) => {
     const [show, setShow] = useState(false)
@@ -7,7 +8,7 @@ const Recipe = ({ recipe }) => {
     const { label, image, url, ingredients } = recipe.recipe;
 
     return (
-        <div className="recipe">
+        <div>
             <h2>{label}</h2>
             <img src={image} alt={label} />
             <a href={url} target="-blank" rel="noopener 

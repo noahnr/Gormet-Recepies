@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import API from "../utils/API";
+import style from "../App.css"
 
 // import Results from "../components/Results";
 // import SearchForm from "../components/SearchForm";
@@ -7,6 +8,7 @@ import API from "../utils/API";
 import Search from "../components/Search"
 
 import Nav from "../components/Nav"
+// import classes from "*.module.css";
 
 class Recipes extends React.Component {
 
@@ -53,7 +55,7 @@ class Recipes extends React.Component {
         return (
             <>
                 <Nav />
-                <div>
+                <div className="recipies">
                     <h1>Welcome {currentUserName}</h1>
                     <p>Email: {currentUserEmail}</p>
                     <p>You have reached your news feed! Search your recipe!</p>
