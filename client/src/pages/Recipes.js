@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 import API from "../utils/API";
+import style from "../App.css"
 
 // import Results from "../components/Results";
 // import SearchForm from "../components/SearchForm";
@@ -7,6 +11,7 @@ import API from "../utils/API";
 import Search from "../components/Search"
 
 import Nav from "../components/Nav"
+// import classes from "*.module.css";
 
 class Recipes extends React.Component {
 
@@ -53,15 +58,22 @@ class Recipes extends React.Component {
         return (
             <>
                 <Nav />
-                <div>
+                <div className="recipies">
                     <h1>Welcome {currentUserName}</h1>
                     <p>Email: {currentUserEmail}</p>
-                    <p>You have reached your news feed! Search your recipe!</p>
+                    <Search/>
                 </div>
-                <Search />
+            <div>
+                    
+                <p>You have reached your news feed! Search your recipe!</p>
+                </div>
+                <div className="imgSlider"> 
+          
+          </div>
             </ >
+            
         );
-    }
+    }   
 }
 
 export default Recipes;
