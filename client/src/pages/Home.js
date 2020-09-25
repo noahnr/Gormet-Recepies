@@ -45,14 +45,14 @@ export default withOktaAuth(
 
       return (
          <>
-          <div class="container">
+          <div className="container">
             <div className="carousel">
               <h1>Welcome Folks!</h1>
               <p>
                 Please sign up to view available recipes. If already a member,
                 please log in.
               </p>
-              <div class="logbtn">
+              {/* <div class="logbtn">
                 <MDBBtn className="button" href="/login">
                   Login
                 </MDBBtn>
@@ -61,7 +61,7 @@ export default withOktaAuth(
                 <MDBBtn className="button" href="/signup">
                   Sign Up
                 </MDBBtn>
-              </div>
+              </div> */}
 
               <CarouselProvider
                 naturalSlideWidth={100}
@@ -125,14 +125,14 @@ export default withOktaAuth(
               </CarouselProvider>
             </div>
           </div>
-          <div>
+          {/* <div>
             <Link to="/">Home</Link>
             <br />
             <Link to="/Recipes">Recipes</Link>
             <br />
             {button}
-          </div>
-          <div class="footer">
+          </div> */}
+          {/* <div class="footer">
             <div class="row">
               <h3>Contact Us:</h3>
               <div class="column">
@@ -188,7 +188,7 @@ export default withOktaAuth(
                 </MDBBtn>
               </div>
             </div>
-          </div>
+          </div> */}
         </>
       );
     }
