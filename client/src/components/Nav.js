@@ -1,7 +1,5 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import {MDBBtn} from "mdbreact";
-
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom';
 import { MDBBtn } from "mdbreact";
