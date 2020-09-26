@@ -1,5 +1,6 @@
-import React, {useState} from "react";
-import RecipeInfo from "./Recipeinfo";
+import React, { useState } from "react";
+import RecipeInfo from "./RecipeInfo";
+
 import 'bootstrap/dist/css/bootstrap.css';
 import style from "../App.css"
 
