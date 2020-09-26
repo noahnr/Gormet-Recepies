@@ -1,6 +1,7 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 import {withOktaAuth} from "@okta/okta-react";
-
+// import Keyframes from '@keyframes/core';
 import {MDBBtn} from "mdbreact";
 import {
   CarouselProvider,
@@ -10,7 +11,6 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-
 
 import style from "../App.css";
 
@@ -44,12 +44,10 @@ export default withOktaAuth(
       );
 
       return (
-        <>
+         <>
           <div className="container">
             <div className="carousel">
               <h1>Welcome Folks!</h1>
-              <p>Please login to search available recipes</p>
-              <CarouselProvider
               <p>
                Please login to search available recipes
               </p>
@@ -64,7 +62,7 @@ export default withOktaAuth(
                 </MDBBtn>
               </div> */}
 
-              {/* <CarouselProvider
+              <CarouselProvider
                 naturalSlideWidth={100}
                 naturalSlideHeight={40}
                 totalSlides={5}
@@ -123,7 +121,7 @@ export default withOktaAuth(
                 </Slider>
                 <ButtonBack>Back</ButtonBack>
                 <ButtonNext>Next</ButtonNext>
-              </CarouselProvider> */}
+              </CarouselProvider>
             </div>
           </div>
         </>
@@ -131,3 +129,4 @@ export default withOktaAuth(
     }
   }
 );
+
