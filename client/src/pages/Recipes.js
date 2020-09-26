@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import API from "../utils/API";
 import style from "../App.css"
@@ -14,41 +14,40 @@ import Nav from "../components/Nav"
 // import classes from "*.module.css";
 
 class Recipes extends React.Component {
+  state = {
+    currentUsername: "",
+    currentUserEmail: "",
+  };
+  componentDidMount() {
+    const idToken = JSON.parse(localStorage.getItem("okta-token-storage"));
+    this.setState({
+      currentUserEmail: idToken.idToken.claims.email,
+      currentUserName: idToken.idToken.claims.name,
+    });
+  }
 
-    state = {
-        currentUsername: '',
-        currentUserEmail: ''
+  constructor(props) {
+    super(props);
+    this.state = {
+      recipeInput: "",
+      recipeData: [],
     }
-    componentDidMount() {
-        const idToken = JSON.parse(localStorage.getItem('okta-token-storage'));
-        this.setState({
-            currentUserEmail: idToken.idToken.claims.email,
-            currentUserName: idToken.idToken.claims.name
-        });
-    }
+    this.handleSearchClick = this.handleSearchClick.bind(this);
+    this.handleFormChange = this.handleFormChange.bind(this);
+}
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            recipeInput: "",
-            recipeData: []
-        }
-        this.handleSearchClick = this.handleSearchClick.bind(this);
-        this.handleFormChange = this.handleFormChange.bind(this);
-    }
+handleFormChange(change) {
+    change.preventDefault();
+    this.setState({ recipeInput: change.target.value })
+}
 
-    handleFormChange(change) {
-        change.preventDefault();
-        this.setState({ recipeInput: change.target.value })
-    }
-
-    handleSearchClick(event) {
-        event.preventDefault();
-        API.searchRecipe(this.state.recipeInput)
-            .then((response) => {
-                this.setState({ recipeData: response.data });
-                this.setState({ recipeInput: "" });
-            })
+handleSearchClick(event) {
+    event.preventDefault();
+    API.searchRecipe(this.state.recipeInput)
+        .then((response) => {
+            this.setState({ recipeData: response.data });
+            this.setState({ recipeInput: "" });
+        })
     };
 
 
