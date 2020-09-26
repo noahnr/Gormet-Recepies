@@ -10,6 +10,7 @@ const RecipeInfo = ({ingredients}) => {
       </ul>
     );
   });
+
 };
 
 export default RecipeInfo;

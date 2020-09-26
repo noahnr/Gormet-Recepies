@@ -4,6 +4,7 @@ import {MDBBtn} from "mdbreact";
 
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom';
+import { MDBBtn } from "mdbreact";
 
 function Nav() {
   return (
@@ -15,6 +16,12 @@ function Nav() {
         <br></br>
         <li>
           <MDBBtn href="/login">Login</MDBBtn>
+        </li>
+        <br></br>
+        <li>
+        <li>
+          <MDBBtn href="/Recipes">Recipes</MDBBtn>
+        </li>
         </li>
       </ul>
     </nav>
