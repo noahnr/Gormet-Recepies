@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import RecipeInfo from "./RecipeInfo";
+
 import 'bootstrap/dist/css/bootstrap.css';
 import style from "../App.css"
 
-const Recipe = ({ recipe }) => {
-    const [show, setShow] = useState(false)
+const Recipe = ({recipe}) => {
+  const [show, setShow] = useState(false);
 
-    const { label, image, url, ingredients } = recipe.recipe;
+  const {label, image, url, ingredients} = recipe.recipe;
 
     return (
         <div className="cardContainer">
@@ -36,4 +37,4 @@ const Recipe = ({ recipe }) => {
     );
 };
 
-export default Recipe
+export default Recipe;

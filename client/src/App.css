@@ -19,10 +19,8 @@
   font-weight: bolder;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
-}
-.mainNav a{
-  color: #ffa8B6;
-}
+};
+
 .button:hover {
   background-color: white; /* Green */
   border: none;
@@ -37,10 +35,7 @@
   cursor: pointer;
   border-radius: 50%;
 }
-.mainNav * {
-  display: inline-flex;
-  width: 100%;
-}
+
 header {
   margin-top: 60px;
   height: 80px;
@@ -76,6 +71,7 @@ header {
   width:100%;
   height: 40px;
 }
+
 .column{
   float: left;
   width: 25%;
@@ -121,22 +117,3 @@ html, body {
   text-align: center;
 }
 
-/* .button--bubble__container {
-  top: 50%;
-  margin-top: -25px;
-}
-
-@keyframes hue-rotate {
-      from {
-        -webkit-filter: hue-rotate(0);
-        -moz-filter: hue-rotate(0);
-        -ms-filter: hue-rotate(0);
-        filter: hue-rotate(0);
-      }
-      to {
-        -webkit-filter: hue-rotate(360deg);
-        -moz-filter: hue-rotate(360deg);
-        -ms-filter: hue-rotate(360deg);
-        filter: hue-rotate(360deg);
-      }
-*/

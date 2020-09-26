@@ -1,3 +1,3 @@
 module.exports = {
-    Recipe: require("./recipes-models")
+  Recipe: require("./recipes-models"),
 };

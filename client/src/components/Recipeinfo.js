@@ -15,6 +15,4 @@ const RecipeInfo = ({ ingredients }) => {
     });
 
 
-};
-
-export default RecipeInfo
+export default RecipeInfo;

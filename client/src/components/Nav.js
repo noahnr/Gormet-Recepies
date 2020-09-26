@@ -1,6 +1,9 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import { MDBBtn } from "mdbreact";
+import {MDBBtn} from "mdbreact";
+
+import 'bootstrap/dist/css/bootstrap.css';
+import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
@@ -15,17 +18,9 @@ function Nav() {
         </li>
         <br></br>
         <li>
-          {/* <Link
-            className="link"
-            activeClass="active"
-            to="contacts"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Contact Us
-          </Link> */}
+        <li>
+          <MDBBtn href="/Recipes">Recipes</MDBBtn>
+        </li>
         </li>
       </ul>
     </nav>
