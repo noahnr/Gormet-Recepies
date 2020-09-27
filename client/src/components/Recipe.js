@@ -13,15 +13,14 @@ const Recipe = ({recipe}) => {
         <div className="cardContainer">
         <div className="cardBody">
             <h2>{label}</h2>
-            <img src={image} alt={label} />
-            {/* <a href={url} target="-blank" rel="noopener 
-            noreferrer">
-                URL
-                </a> */}
-            <button onClick={() => setShow(!show)}
-            >Ingredients</button>
+            <div>
+                <img src={image} alt={label} />
+            </div>
+                <button onClick={() => setShow(!show)}
+                    >Ingredients
+                    </button>
             {show && <RecipeInfo ingredients={ingredients} />}
-            <div >
+             <div >
              <p><RecipeInfo ingredients={ingredients} /></p>
             </div>
            

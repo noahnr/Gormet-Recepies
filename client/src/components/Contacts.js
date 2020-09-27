@@ -1,9 +1,10 @@
 import React from "react";
 import {MDBBtn} from "mdbreact";
+import 'bootstrap/dist/css/bootstrap.css';
 
 function Contacts() {
   return (
-    <footer>
+    <footer className="page-footer font-small blue pt-4">
       <div class="row">
         <h3>Contact Us:</h3>
         <div className="contact-content">
