@@ -1,5 +1,6 @@
 import React from "react";
 
+// Alert function if user types in something other then a recipe item
 const Alert = ({alert}) => {
   return (
     <div className="alert">
@@ -8,4 +9,5 @@ const Alert = ({alert}) => {
   );
 };
 
+// Export Alert
 export default Alert;
