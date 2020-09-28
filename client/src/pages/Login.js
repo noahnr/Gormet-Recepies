@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import OktaSignInWidget from './SignInWidget';
 import { withOktaAuth } from '@okta/okta-react';
+import style from "../App.css"
 
 export default withOktaAuth(class Login extends Component {
   constructor(props) {
@@ -29,7 +30,7 @@ export default withOktaAuth(class Login extends Component {
   render() {
     if (this.props.authState.isPending) return null;
     return this.props.authState.isAuthenticated ?
-      <Redirect to={{ pathname: '/' }} /> :
+      <Redirect  to={{ pathname: '/Recipes' }} /> :
       <OktaSignInWidget
         baseUrl={this.props.baseUrl}
         onSuccess={this.onSuccess}

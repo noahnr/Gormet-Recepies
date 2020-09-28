@@ -21,6 +21,7 @@
 		"nodemon": "^1.18.7"
 	},
 	"dependencies": {
+		"@keyframes/core": "^2.0.10",
 		"@okta/okta-react": "^1.4.1",
 		"@okta/okta-signin-widget": "^4.4.4",
 		"ansi-regex": "^5.0.0",
@@ -36,6 +37,7 @@
 		"react-dom": "^16.4.1",
 		"react-router-dom": "^4.3.1",
 		"react-scripts": "^3.4.3",
+		"uuid": "^8.3.0",
 		"with-router": "^1.0.1"
 	}
 }
