@@ -4,10 +4,10 @@ import {MDBBtn} from "mdbreact";
 function Contacts() {
   return (
     <footer className="contact-content">
-      <div >
+      <div>
         <h3>Contact Us:</h3>
         <div>
-          <div class="column" >
+          <div class="column">
             <h4>Rodolfo Gauna</h4>
             <MDBBtn className="button" href="https://github.com/rgauna">
               GitHub

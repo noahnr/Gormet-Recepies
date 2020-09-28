@@ -1,8 +1,5 @@
 import React, {Component} from "react";
-
 import {withOktaAuth} from "@okta/okta-react";
-// import Keyframes from '@keyframes/core';
-
 import {
   CarouselProvider,
   Slider,
@@ -11,8 +8,6 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-
-// import style from "../App.css";
 
 export default withOktaAuth(
   class Home extends Component {
@@ -44,7 +39,7 @@ export default withOktaAuth(
       );
 
       return (
-         <>
+        <>
           <div className="container">
             <div className="carousel">
               <CarouselProvider
@@ -114,4 +109,3 @@ export default withOktaAuth(
     }
   }
 );
-

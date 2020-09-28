@@ -14,10 +14,6 @@ const Recipe = ({recipe}) => {
       <div className="cardBody">
         <h2>{label}</h2>
         <img src={image} alt={label} />
-        {/* <a href={url} target="-blank" rel="noopener 
-            noreferrer">
-                URL
-                </a> */}
         <button onClick={() => setShow(!show)}>Ingredients</button>
         {show && <RecipeInfo ingredients={ingredients} />}
         <div>

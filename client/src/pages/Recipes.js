@@ -1,17 +1,7 @@
 import React from "react";
-// import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 import API from "../utils/API";
-// import style from "../App.css"
-
-// import Results from "../components/Results";
-// import SearchForm from "../components/SearchForm";
-// import RecipeSearcher from "../components/RecipeSearcher"
-import Search from "../components/Search"
-
-import Nav from "../components/Nav"
-// import classes from "*.module.css";
+import Search from "../components/Search";
+import Nav from "../components/Nav";
 
 class Recipes extends React.Component {
   state = {
@@ -31,48 +21,42 @@ class Recipes extends React.Component {
     this.state = {
       recipeInput: "",
       recipeData: [],
-    }
+    };
     this.handleSearchClick = this.handleSearchClick.bind(this);
     this.handleFormChange = this.handleFormChange.bind(this);
-}
+  }
 
-handleFormChange(change) {
+  handleFormChange(change) {
     change.preventDefault();
-    this.setState({ recipeInput: change.target.value })
-}
+    this.setState({recipeInput: change.target.value});
+  }
 
-handleSearchClick(event) {
+  handleSearchClick(event) {
     event.preventDefault();
-    API.searchRecipe(this.state.recipeInput)
-        .then((response) => {
-            this.setState({ recipeData: response.data });
-            this.setState({ recipeInput: "" });
-        })
-    };
+    API.searchRecipe(this.state.recipeInput).then((response) => {
+      this.setState({recipeData: response.data});
+      this.setState({recipeInput: ""});
+    });
+  }
 
+  render() {
+    const {currentUserEmail, currentUserName} = this.state;
 
-    render() {
-        const { currentUserEmail, currentUserName } = this.state;
-
-        return (
-            <>
-                <Nav />
-                <div className="recipies">
-                    <h1>Welcome {currentUserName}</h1>
-                    <p>Email: {currentUserEmail}</p>
-                    <Search/>
-                </div>
-            <div>
-                    
-                <p>You have reached your news feed! Search your recipe!</p>
-                </div>
-                <div className="imgSlider"> 
-          
-          </div>
-            </ >
-            
-        );
-    }   
+    return (
+      <>
+        <Nav />
+        <div className="recipies">
+          <h1>Welcome {currentUserName}</h1>
+          <p>Email: {currentUserEmail}</p>
+          <Search />
+        </div>
+        <div>
+          <p>You have reached your news feed! Search your recipe!</p>
+        </div>
+        <div className="imgSlider"></div>
+      </>
+    );
+  }
 }
 
 export default Recipes;
