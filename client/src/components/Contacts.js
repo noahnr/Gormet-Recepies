@@ -1,6 +1,7 @@
 import React from "react";
 import {MDBBtn} from "mdbreact";
 
+// Footer which contains contact information and links
 function Contacts() {
   return (
     <footer className="contact-content">
@@ -59,4 +60,5 @@ function Contacts() {
   );
 }
 
+// export Contacts
 export default Contacts;

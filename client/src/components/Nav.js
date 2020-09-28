@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import {MDBBtn} from "mdbreact";
 
+// Navagation bar with links for log out, login, and recipes
 function Nav() {
   return (
     <nav className="navbar ">
@@ -24,4 +25,5 @@ function Nav() {
   );
 }
 
+// Export Nav
 export default Nav;

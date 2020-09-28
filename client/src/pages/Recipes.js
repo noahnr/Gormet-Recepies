@@ -3,6 +3,7 @@ import API from "../utils/API";
 import Search from "../components/Search";
 import Nav from "../components/Nav";
 
+// Shows different recipes the user searched
 class Recipes extends React.Component {
   state = {
     currentUsername: "",
@@ -26,11 +27,13 @@ class Recipes extends React.Component {
     this.handleFormChange = this.handleFormChange.bind(this);
   }
 
+  // handles and changes that are typed in to search bar
   handleFormChange(change) {
     change.preventDefault();
     this.setState({recipeInput: change.target.value});
   }
 
+  // handle the search click event button
   handleSearchClick(event) {
     event.preventDefault();
     API.searchRecipe(this.state.recipeInput).then((response) => {
@@ -59,4 +62,5 @@ class Recipes extends React.Component {
   }
 }
 
+// Export Recipes
 export default Recipes;

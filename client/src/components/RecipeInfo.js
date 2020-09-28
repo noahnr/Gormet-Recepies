@@ -1,6 +1,7 @@
 import React from "react";
 import {v4 as uuidv4} from "uuid";
 
+// RecipeInfo contains the ingredient text information
 const RecipeInfo = ({ingredients}) => {
   return ingredients.map((ingredient) => {
     return (
@@ -12,4 +13,5 @@ const RecipeInfo = ({ingredients}) => {
   });
 };
 
+// Export RecipeInfo
 export default RecipeInfo;

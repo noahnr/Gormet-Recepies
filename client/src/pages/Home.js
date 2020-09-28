@@ -9,6 +9,7 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
+// secure login from Okta
 export default withOktaAuth(
   class Home extends Component {
     constructor(props) {
@@ -38,6 +39,7 @@ export default withOktaAuth(
         </button>
       );
 
+      // Images of food in a carousel
       return (
         <>
           <div className="container">

@@ -7,6 +7,7 @@ mongoose.connect(
     "mongodb://localhost/Gormet-Recepies"
 );
 
+// recipe information for future input by the developers
 const recipeSeed = [
     {
         title: "--",

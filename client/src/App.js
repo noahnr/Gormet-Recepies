@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import "./App.css";
 
+// UI layout
 class App extends Component {
   render() {
     return (
@@ -19,4 +20,5 @@ class App extends Component {
   }
 }
 
+// Export App
 export default App;

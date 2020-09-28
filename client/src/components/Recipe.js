@@ -1,9 +1,8 @@
 import React, {useState} from "react";
 import RecipeInfo from "./RecipeInfo";
-
 import "bootstrap/dist/css/bootstrap.css";
-// import style from "../App.css"
 
+// Recipe function populates searched recipes and the ingredients
 const Recipe = ({recipe}) => {
   const [show, setShow] = useState(false);
 
@@ -26,4 +25,5 @@ const Recipe = ({recipe}) => {
   );
 };
 
+// Export Recipe
 export default Recipe;

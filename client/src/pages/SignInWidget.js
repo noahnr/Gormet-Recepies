@@ -4,6 +4,7 @@ import OktaSignIn from "@okta/okta-signin-widget";
 import "@okta/okta-signin-widget/dist/css/okta-sign-in.min.css";
 import Image from "../img/logo.jpg";
 
+// sign in widget for secure login
 class SignInWidget extends Component {
   componentDidMount() {
     const el = ReactDOM.findDOMNode(this);
@@ -23,4 +24,5 @@ class SignInWidget extends Component {
   }
 }
 
+// Export SignInWidget
 export default SignInWidget;

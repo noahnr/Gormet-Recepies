@@ -3,6 +3,7 @@ import {Redirect} from "react-router-dom";
 import OktaSignInWidget from "./SignInWidget";
 import {withOktaAuth} from "@okta/okta-react";
 
+// Verify login information
 export default withOktaAuth(
   class Login extends Component {
     constructor(props) {
