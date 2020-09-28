@@ -25,7 +25,7 @@ export default withRouter(class AppWithRouterAccess extends Component {
 
         return (
             <Security issuer='https://dev-781909.okta.com/oauth2/default'
-                clientId='0oa1195gipJZlUspx4x7'
+                clientId='0oa12dglsonNjoBFB4x7'
                 redirectUri={window.location.origin + '/implicit/callback'}
                 onAuthRequired={this.onAuthRequired} >
                 <Route path='/' exact={true} component={Home} />
