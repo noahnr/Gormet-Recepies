@@ -5,6 +5,9 @@ function Contacts() {
   return (
     <footer className="contact-content">
       <div>
+        <MDBBtn className="button" href="mailto: noahsoukupraesch@gmail.com">
+          Request Login
+        </MDBBtn>
         <h3>Contact Us:</h3>
         <div>
           <div class="column">
