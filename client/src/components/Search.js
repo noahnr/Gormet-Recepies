@@ -19,7 +19,7 @@ const Search = () => {
     if (query !== "") {
       const result = await Axios.get(url);
       if (!result.data.more) {
-        return setAlert("Thats not a food DudE!");
+        return setAlert("Thats not a food Guy!");
       }
       setRecipes(result.data.hits);
       console.log(result);
