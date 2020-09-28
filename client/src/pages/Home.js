@@ -47,21 +47,6 @@ export default withOktaAuth(
          <>
           <div className="container">
             <div className="carousel">
-              <h1>Welcome Folks!</h1>
-              <p>
-               Please login to search available recipes
-              </p>
-              {/* <div class="logbtn">
-                <MDBBtn className="button" href="/login">
-                  Login
-                </MDBBtn>
-              </div>
-              <div class="signbtn">
-                <MDBBtn className="button" href="/signup">
-                  Sign Up
-                </MDBBtn>
-              </div> */}
-
               <CarouselProvider
                 naturalSlideWidth={100}
                 naturalSlideHeight={40}

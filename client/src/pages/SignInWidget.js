@@ -20,7 +20,7 @@ class SignInWidget extends Component {
   }
 
   render() {
-    return <div />;
+    return <div className="signIn"/>;
   }
 }
 
