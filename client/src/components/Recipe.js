@@ -10,8 +10,8 @@ const Recipe = ({ recipe }) => {
   const { label, image, url, ingredients } = recipe.recipe;
 
   return (
-    <div className="card">
-      <div className="cardBody">
+    <div className="row">
+      <div className="col-sm">
         <h2>{label}</h2>
         <div>
           <img

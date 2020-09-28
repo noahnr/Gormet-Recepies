@@ -46,7 +46,7 @@ const Search = () => {
         <input
           className="input"
           type="text"
-          placeholder="U hungry, bro?"
+          placeholder="Search Here!"
           autoComplete="off"
           onChange={onChange}
           value={query}
