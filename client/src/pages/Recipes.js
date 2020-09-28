@@ -56,14 +56,12 @@ handleSearchClick(event) {
 
         return (
             <>
-                <div className="recipes">
+                <div className="userWelcome">
                     <h1>Welcome {currentUserName}</h1>
                     <p>Email: {currentUserEmail}</p>
                     <Search/>
                 </div>
             <div>
-                    
-                <p>You have reached your news feed! Search your recipe!</p>
                 </div>
                 <div> 
           

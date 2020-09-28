@@ -3,6 +3,7 @@ import Axios from "axios";
 import {v4 as uuidv4} from "uuid";
 import Recipe from "./Recipe";
 import Alert from "./Alert";
+import style from "../App.css"
 
 const Search = () => {
   const [query, setQuery] = useState("");
@@ -38,13 +39,13 @@ const Search = () => {
   };
 
   return (
-    <div className="App">
+    <div className="searchBar">
       <h1>Gourmet Recipe Search</h1>
       <form className="search-from" onSubmit={onSubmit}>
         {alert !== "" && <Alert alert={alert} />}
-        <input
+        <input className="input"
           type="text"
-          placeholder="What ya feel like cooking?"
+          placeholder="U hungry, bro?"
           autoComplete="off"
           onChange={onChange}
           value={query}

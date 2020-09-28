@@ -41,20 +41,46 @@
   
 
 }
-.recipes{
+
+.searchBar{
+  color:#006A7A;
+  align-content: center;
   margin: auto;
-  width: 50%;
-  height: 250px;
-  border-radius: 25px;
-  border: 2px solid #ffa8B6;
-  color: aliceblue;
+  width: auto;
+  
+}
+
+.input{
+  margin: auto;
+  position: absolute;
 
 }
+
+.userWelcome{
+  align-content: center;
+  color: aliceblue;
+  margin: auto;
+  border: 2px solid #ffa8B6;
+  border-radius: 25px;
+  width: 50%;
+  height: auto;
+  opacity: 0.8;
+  background-color: thistle;
+}
+
+
 
 .card{
-  display: flex;
   width: 18rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  gap: 4px;
+  grid-auto-flow: column;
 }
+
+
 
 .contact-content{
   color: #006A7A;
