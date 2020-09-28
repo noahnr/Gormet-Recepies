@@ -1,14 +1,18 @@
 import React from "react";
 import {MDBBtn} from "mdbreact";
 
+// Footer which contains contact information and links
 function Contacts() {
   return (
-    <footer>
-      <div class="row">
+    <footer className="contact-content">
+      <div>
+        <MDBBtn className="button" href="mailto: noahsoukupraesch@gmail.com">
+          Request Login
+        </MDBBtn>
         <h3>Contact Us:</h3>
-        <div className="contact-content">
+        <div>
           <div class="column">
-            <h4>Rodolfo Guana</h4>
+            <h4>Rodolfo Gauna</h4>
             <MDBBtn className="button" href="https://github.com/rgauna">
               GitHub
             </MDBBtn>
@@ -56,4 +60,5 @@ function Contacts() {
   );
 }
 
+// export Contacts
 export default Contacts;

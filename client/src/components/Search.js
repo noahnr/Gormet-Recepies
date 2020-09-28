@@ -4,6 +4,7 @@ import {v4 as uuidv4} from "uuid";
 import Recipe from "./Recipe";
 import Alert from "./Alert";
 
+// api call function with alert
 const Search = () => {
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
@@ -26,7 +27,7 @@ const Search = () => {
       setAlert("");
       setQuery("");
     } else {
-      setAlert("Come on Im hungry!!!");
+      setAlert("Come on lets eat!!!");
     }
   };
   const onChange = (e) => {
@@ -37,6 +38,7 @@ const Search = () => {
     getData();
   };
 
+  // search bar
   return (
     <div className="App">
       <h1>Gourmet Recipe Search</h1>
@@ -59,4 +61,5 @@ const Search = () => {
   );
 };
 
+// Export Search
 export default Search;
