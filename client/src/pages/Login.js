@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import OktaSignInWidget from './SignInWidget';
 import { withOktaAuth } from '@okta/okta-react';
-import style from "../App.css"
+// import style from "../App.css"
 
 export default withOktaAuth(class Login extends Component {
   constructor(props) {

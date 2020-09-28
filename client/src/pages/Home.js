@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import {Link} from "react-router-dom";
+
 import {withOktaAuth} from "@okta/okta-react";
 // import Keyframes from '@keyframes/core';
-import {MDBBtn} from "mdbreact";
+
 import {
   CarouselProvider,
   Slider,
@@ -12,7 +12,7 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-import style from "../App.css";
+// import style from "../App.css";
 
 export default withOktaAuth(
   class Home extends Component {

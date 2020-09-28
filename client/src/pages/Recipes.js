@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 // import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import API from "../utils/API";
-import style from "../App.css"
+// import style from "../App.css"
 
 // import Results from "../components/Results";
 // import SearchForm from "../components/SearchForm";
