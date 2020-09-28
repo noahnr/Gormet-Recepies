@@ -3,12 +3,12 @@ import {MDBBtn} from "mdbreact";
 
 function Contacts() {
   return (
-    <footer>
-      <div class="row">
+    <footer className="contact-content">
+      <div >
         <h3>Contact Us:</h3>
-        <div className="contact-content">
-          <div class="column">
-            <h4>Rodolfo Guana</h4>
+        <div>
+          <div class="column" >
+            <h4>Rodolfo Gauna</h4>
             <MDBBtn className="button" href="https://github.com/rgauna">
               GitHub
             </MDBBtn>
