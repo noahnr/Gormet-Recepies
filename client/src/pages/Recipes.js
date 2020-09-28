@@ -56,8 +56,7 @@ handleSearchClick(event) {
 
         return (
             <>
-                <Nav />
-                <div className="recipies">
+                <div className="recipes">
                     <h1>Welcome {currentUserName}</h1>
                     <p>Email: {currentUserEmail}</p>
                     <Search/>
@@ -66,7 +65,7 @@ handleSearchClick(event) {
                     
                 <p>You have reached your news feed! Search your recipe!</p>
                 </div>
-                <div className="imgSlider"> 
+                <div> 
           
           </div>
             </ >
