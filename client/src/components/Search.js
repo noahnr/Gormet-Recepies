@@ -26,7 +26,7 @@ const Search = () => {
       setAlert("");
       setQuery("");
     } else {
-      setAlert("Come on Im hungry!!!");
+      setAlert("Come on lets eat!!!");
     }
   };
   const onChange = (e) => {
