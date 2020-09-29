@@ -38,7 +38,7 @@ There were four collaborators working on this project from start to finish.
 Rudy Gauna - Styling the UI
 Noah Soukup - Mongo Database, User Login Authorization, React
 Chris James Carreon - React, API, JS
-Joseph Arocha - React, JS, Page structure
+Joseph Arocha - React, JS, Page Structure
 
 ## License 
 
