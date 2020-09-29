@@ -8,10 +8,10 @@ Gourmet-Recipes is a web application designed so the user can search recipes of 
 
 React
 Okta login
-React Components styling
-Edamam Api search
-Mongo database
-UUID package
+React Components Styling
+Edamam Api Search
+Mongo Database
+UUID Package
 
 ## Starting app locally
 
@@ -35,10 +35,10 @@ In this website the user will be able to view dishes that the developers have pr
 ## Credits
 
 There were four collaborators working on this project from start to finish.
-Rudy Gauna - Styling the UI
-Noah Soukup - Mongo Database, User login authorization, React
+Rudy Gauna- Styling the UI
+Noah Soukup- Mongo Database, User Login Authorization, React
 Chris James Carreon - React, API, JS
-Joseph Arocha - React, JS, Page structure
+Joseph Arocha- React, JS, Page Structure
 
 ## License 
 
