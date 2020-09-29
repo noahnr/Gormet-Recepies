@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 // Recipe function populates searched recipes and the ingredients
 const Recipe = ({recipe}) => {
-  const [show, setShow] = useState(false);
+  const [show] = useState(false);
 
   const {label, image, ingredients} = recipe.recipe;
 
