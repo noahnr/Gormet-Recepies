@@ -1,7 +1,10 @@
 import React from "react";
 import API from "../utils/API";
 import Search from "../components/Search";
+<<<<<<< HEAD
+=======
 
+>>>>>>> 732f71861921b1d92f3aaa5183591538e6a10385
 // Shows different recipes the user searched
 class Recipes extends React.Component {
   state = {
@@ -15,7 +18,6 @@ class Recipes extends React.Component {
       currentUserName: idToken.idToken.claims.name,
     });
   }
-
   constructor(props) {
     super(props);
     this.state = {
@@ -25,13 +27,11 @@ class Recipes extends React.Component {
     this.handleSearchClick = this.handleSearchClick.bind(this);
     this.handleFormChange = this.handleFormChange.bind(this);
   }
-
   // handles and changes that are typed in to search bar
   handleFormChange(change) {
     change.preventDefault();
     this.setState({recipeInput: change.target.value});
   }
-
   // handle the search click event button
   handleSearchClick(event) {
     event.preventDefault();
@@ -40,10 +40,8 @@ class Recipes extends React.Component {
       this.setState({recipeInput: ""});
     });
   }
-
   render() {
     const {currentUserEmail, currentUserName} = this.state;
-
     return (
       <>
 
@@ -56,6 +54,5 @@ class Recipes extends React.Component {
     );
   }
 }
-
 // Export Recipes
 export default Recipes;

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import RecipeInfo from "../components/RecipeInfo";
+import RecipeInfo from "./RecipeInfo";
 import "bootstrap/dist/css/bootstrap.css";
 
 // Recipe function populates searched recipes and the ingredients
