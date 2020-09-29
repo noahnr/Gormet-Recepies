@@ -7,7 +7,7 @@ class Header extends Component {
       <header className="header">
         <h1>Welcome to Gourmet-Recipes!</h1>
         <p>Delicious recipes at the tip of your fingers!</p>
-        <p>Please login to search available recipes</p>
+        <p className="headerP">Please login to search available recipes</p>
       </header>
     );
   }

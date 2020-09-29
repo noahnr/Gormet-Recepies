@@ -1,10 +1,6 @@
 import React from "react";
 import API from "../utils/API";
 import Search from "../components/Search";
-<<<<<<< HEAD
-=======
-
->>>>>>> 732f71861921b1d92f3aaa5183591538e6a10385
 // Shows different recipes the user searched
 class Recipes extends React.Component {
   state = {
@@ -44,7 +40,6 @@ class Recipes extends React.Component {
     const {currentUserEmail, currentUserName} = this.state;
     return (
       <>
-
         <div className="userWelcome">
           <h1>Welcome, {currentUserName}</h1>
           <p>Email: {currentUserEmail}</p>
