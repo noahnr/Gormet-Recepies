@@ -1,8 +1,9 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Axios from "axios";
-import {v4 as uuidv4} from "uuid";
+import { v4 as uuidv4 } from "uuid";
 import Recipe from "./Recipe";
 import Alert from "./Alert";
+import style from "../App.css";
 
 // api call function with alert
 const Search = () => {
@@ -40,13 +41,14 @@ const Search = () => {
 
   // search bar
   return (
-    <div className="App">
+    <div className="searchBar">
       <h1>Gourmet Recipe Search</h1>
       <form className="search-from" onSubmit={onSubmit}>
         {alert !== "" && <Alert alert={alert} />}
         <input
+          className="input"
           type="text"
-          placeholder="What ya feel like cooking?"
+          placeholder="Search Here!"
           autoComplete="off"
           onChange={onChange}
           value={query}

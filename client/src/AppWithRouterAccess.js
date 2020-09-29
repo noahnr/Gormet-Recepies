@@ -20,14 +20,14 @@ export default withRouter(
       // Note: If your app is configured to use the Implicit Flow
       // instead of the Authorization Code with Proof of Code Key Exchange (PKCE)
       // you will need to add the below property to what is passed to <Security>
-      //
+      //a
       // pkce={false}
 
         // Note: If your app is configured to use the Implicit Flow 
         // instead of the Authorization Code with Proof of Code Key Exchange (PKCE)
         // you will need to add the below property to what is passed to <Security>
         //
-        // pkce={false}
+        // pkce={false}a
 
         return (
             <Security issuer='https://dev-781909.okta.com/oauth2/default'

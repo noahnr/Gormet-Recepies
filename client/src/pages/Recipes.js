@@ -47,16 +47,11 @@ class Recipes extends React.Component {
 
     return (
       <>
-        <Nav />
-        <div className="recipies">
-          <h1>Welcome {currentUserName}</h1>
+        <div className="userWelcome">
+          <h1>Welcome, {currentUserName}</h1>
           <p>Email: {currentUserEmail}</p>
           <Search />
         </div>
-        <div>
-          <p>You have reached your news feed! Search your recipe!</p>
-        </div>
-        <div className="imgSlider"></div>
       </>
     );
   }

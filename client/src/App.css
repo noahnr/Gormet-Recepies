@@ -1,20 +1,18 @@
-<<<<<<< HEAD
-
-  
-=======
 .header {
   padding: 60px;
   text-align: center;
   color: #006a7a;
   font-size: 30px;
   border: 2px solid #ffa8b6;
+  border-radius: 25px;
   background-color: thistle;
   opacity: 0.5;
+  color: #006a7a;
 
   margin: auto;
   width: 50%;
   height: 250px;
-  border-radius: 25px;
+ 
 }
 
 .signIn {
@@ -45,17 +43,71 @@
     1;
 }
 
+.searchBar {
+  color:#006A7A;	  color: #006a7a;
+  align-content: center;	  align-content: center;
+  margin: auto;	  margin: auto;
+  width: auto;	  width: auto;
+
+}	
+
+.input {
+  margin: auto;	  margin: auto;
+  position: absolute;	  position: absolute;
+
+}	
+
+.userWelcome {
+  align-content: center;	  align-content: center;
+  text-align: center;
+  color: aliceblue;	  color: aliceblue;
+  margin: auto;	  margin: auto;
+  border: 2px solid #ffa8b6;	
+  border-radius: 25px;	  border-radius: 25px;
+  width: 50%;	  width: 50%;
+  height: auto;	  height: auto;
+  opacity: 0.8;	  opacity: 0.9;
+  background-color: thistle;	  background-color: thistle;
+  -webkit-box-shadow: 3px 3px 5px 6px thistle;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px thistle;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px thistle;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}	
+/* 
+.recipes{
+  margin: auto;
+  width: 50%;
+  height: 250px;
+  border-radius: 25px;
+  border: 2px solid #ffa8B6;
+  color: aliceblue;
+  text-align: center;
+
+} */
+
+.card{
+  display: flex;	
+  width: 18rem;	  width: 18rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  border: 2px solid #ffa8b6;
+  border-radius: 25px;
+  gap: 4px;
+  grid-auto-flow: column;
+}	
+
 .contact-content {
   color: #006a7a;
   border: 2px solid #ffa8b6;
   background-color: thistle;
   opacity: 0.5;
   border-radius: 25px;
-  height: 175px;
+  height: 200px;
 }
 
 .contact-content a {
-  color: aliceblue;
+  color: #006a7a;
 }
 
 .navUL {
@@ -86,7 +138,6 @@
   color: aliceblue;
 }
 
->>>>>>> 2700ce1d5eb84f2b3956b0330b069c141baeb05c
 .text {
   color: white;
   font-size: 19px;
@@ -96,30 +147,6 @@
   font-weight: bolder;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
-<<<<<<< HEAD
-};
-.navbar{
-  background: linear-gradient(90deg, rgba(81,226,245,1) 0%, rgba(255,168,182,1) 35%, rgba(162,128,137,1) 100%); 
-  font-family: sans-serif;
-  color: wheat;
-
-}
-
-.button:hover {
-  background-color: white; /* Green */
-  border: none;
-  color: red;
-  padding: 10px ;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 50%;
-=======
->>>>>>> 2700ce1d5eb84f2b3956b0330b069c141baeb05c
 }
 
 header {
@@ -151,21 +178,10 @@ header {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-.footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
-=======
 .footer {
   bottom: 0;
   width: 100%;
   height: 40px;
->>>>>>> 2700ce1d5eb84f2b3956b0330b069c141baeb05c
 }
 
 .column {

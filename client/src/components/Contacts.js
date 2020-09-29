@@ -5,16 +5,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 // Footer which contains contact information and links
 function Contacts() {
   return (
-<<<<<<< HEAD
-    <footer className="page-footer font-small blue pt-4">
-      <div class="row">
-=======
     <footer className="contact-content">
       <div>
         <MDBBtn className="button" href="mailto: noahsoukupraesch@gmail.com">
           Request Login
         </MDBBtn>
->>>>>>> 2700ce1d5eb84f2b3956b0330b069c141baeb05c
         <h3>Contact Us:</h3>
         <div>
           <div class="column">
