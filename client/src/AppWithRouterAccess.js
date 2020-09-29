@@ -31,7 +31,7 @@ export default withRouter(
 
         return (
             <Security issuer='https://dev-781909.okta.com/oauth2/default'
-                clientId='0oa12dglsonNjoBFB4x7'
+                clientId='0oa12lyn6vGTPm7q84x7T'
                 redirectUri={window.location.origin + '/implicit/callback'}
                 onAuthRequired={this.onAuthRequired} >
                 <Route path='/' exact={true} component={Home} />
