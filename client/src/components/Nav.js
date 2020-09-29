@@ -1,40 +1,29 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import {MDBBtn} from "mdbreact";
-import style from "../App.css"
-import 'bootstrap/dist/css/bootstrap.css';
-
-
-import { Link } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.css";
 import {MDBBtn} from "mdbreact";
 
-
+// Navagation bar with links for log out, login, and recipes
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-sm navbar-info bg-info mb-4">
-      <ul>
-        <li>
+    <nav className="navbar ">
+      <ul className="navUL">
+        <li className="navLI">
           <MDBBtn href="/">Log Out</MDBBtn>
         </li>
         <br></br>
-        <li className="navLI"> 
+        <li className="navLI">
           <MDBBtn href="/login">Login</MDBBtn>
         </li>
         <br></br>
         <li>
-        <li className="navLI">
-          <MDBBtn href="/Recipes">Recipes</MDBBtn>
-        </li>
+          <li className="navLI">
+            <MDBBtn href="/Recipes">Recipes</MDBBtn>
+          </li>
         </li>
       </ul>
     </nav>
   );
 }
 
-
-
-// class Navbar extends Component {
-//   render() {
-
-
+// Export Nav
 export default Nav;

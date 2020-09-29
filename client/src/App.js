@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import AppWithRouterAccess from './AppWithRouterAccess';
-import Contacts from "./components/Contacts"
-import Header from "./components/Header"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from "./components/Nav"
+import React, {Component} from "react";
+import {BrowserRouter as Router} from "react-router-dom";
+import AppWithRouterAccess from "./AppWithRouterAccess";
+import Contacts from "./components/Contacts";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import "./App.css";
 
-
-
+// UI layout
 class App extends Component {
   render() {
     return (
       <Router>
-        <Nav/>
+        <Nav />
         <Header />
         <AppWithRouterAccess />
         <Contacts />
@@ -21,5 +20,5 @@ class App extends Component {
   }
 }
 
-  
+// Export App
 export default App;

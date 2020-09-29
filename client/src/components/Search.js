@@ -5,6 +5,7 @@ import Recipe from "./Recipe";
 import Alert from "./Alert";
 import style from "../App.css";
 
+// api call function with alert
 const Search = () => {
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
@@ -20,14 +21,14 @@ const Search = () => {
     if (query !== "") {
       const result = await Axios.get(url);
       if (!result.data.more) {
-        return setAlert("Thats not a food guy!");
+        return setAlert("THATS NOT A FOOD GUY!!!");
       }
       setRecipes(result.data.hits);
       console.log(result);
       setAlert("");
       setQuery("");
     } else {
-      setAlert("Come on Im hungry!!!");
+      setAlert("COME ON IM HUNGRY!!!");
     }
   };
   const onChange = (e) => {
@@ -38,6 +39,7 @@ const Search = () => {
     getData();
   };
 
+  // search bar
   return (
     <div className="searchBar">
       <h1>Gourmet Recipe Search</h1>
@@ -61,4 +63,5 @@ const Search = () => {
   );
 };
 
+// Export Search
 export default Search;

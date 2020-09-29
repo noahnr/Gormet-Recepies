@@ -4,13 +4,15 @@
   color: #006a7a;
   font-size: 30px;
   border: 2px solid #ffa8b6;
+  border-radius: 25px;
   background-color: thistle;
   opacity: 0.5;
+  color: #006a7a;
 
   margin: auto;
   width: 50%;
   height: 250px;
-  border-radius: 25px;
+ 
 }
 
 .signIn {
@@ -41,17 +43,71 @@
     1;
 }
 
+.searchBar {
+  color:#006A7A;	  color: #006a7a;
+  align-content: center;	  align-content: center;
+  margin: auto;	  margin: auto;
+  width: auto;	  width: auto;
+
+}	
+
+.input {
+  margin: auto;	  margin: auto;
+  position: absolute;	  position: absolute;
+
+}	
+
+.userWelcome {
+  align-content: center;	  align-content: center;
+  text-align: center;
+  color: aliceblue;	  color: aliceblue;
+  margin: auto;	  margin: auto;
+  border: 2px solid #ffa8b6;	
+  border-radius: 25px;	  border-radius: 25px;
+  width: 50%;	  width: 50%;
+  height: auto;	  height: auto;
+  opacity: 0.8;	  opacity: 0.9;
+  background-color: thistle;	  background-color: thistle;
+  -webkit-box-shadow: 3px 3px 5px 6px thistle;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px thistle;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px thistle;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}	
+/* 
+.recipes{
+  margin: auto;
+  width: 50%;
+  height: 250px;
+  border-radius: 25px;
+  border: 2px solid #ffa8B6;
+  color: aliceblue;
+  text-align: center;
+
+} */
+
+.card{
+  display: flex;	
+  width: 18rem;	  width: 18rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  border: 2px solid #ffa8b6;
+  border-radius: 25px;
+  gap: 4px;
+  grid-auto-flow: column;
+}	
+
 .contact-content {
   color: #006a7a;
   border: 2px solid #ffa8b6;
   background-color: thistle;
   opacity: 0.5;
   border-radius: 25px;
-  height: 175px;
+  height: 200px;
 }
 
 .contact-content a {
-  color: aliceblue;
+  color: #006a7a;
 }
 
 .navUL {
