@@ -20,14 +20,14 @@ const Search = () => {
     if (query !== "") {
       const result = await Axios.get(url);
       if (!result.data.more) {
-        return setAlert("Thats not a food guy!");
+        return setAlert("THATS NOT A FOOD GUY!!!");
       }
       setRecipes(result.data.hits);
       console.log(result);
       setAlert("");
       setQuery("");
     } else {
-      setAlert("Come on lets eat!!!");
+      setAlert("COME ON IM HUNGRY!!!");
     }
   };
   const onChange = (e) => {
