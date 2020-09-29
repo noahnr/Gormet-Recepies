@@ -3,7 +3,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import AppWithRouterAccess from './AppWithRouterAccess';
 import Contacts from "./components/Contacts"
 import Header from "./components/Header"
-import Nav from './components/Nav';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from "./components/Nav"
 
 
 

@@ -1,7 +1,7 @@
 import React from "react";
-import { v4 as uuidv4 } from "uuid";
+import {v4 as uuidv4} from "uuid";
 
-const RecipeInfo = ({ ingredients }) => {
+const RecipeInfo = ({ingredients}) => {
   return ingredients.map((ingredient) => {
     return (
       <ul key={uuidv4()} className="ingredient-list">
