@@ -1,6 +1,7 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
 import {MDBBtn} from "mdbreact";
+<<<<<<< HEAD
 import style from "../App.css"
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -12,23 +13,33 @@ function Nav() {
     <nav className="navbar navbar-expand-sm navbar-info bg-info mb-4">
       <ul>
         <li>
+=======
+
+// Navagation bar with links for log out, login, and recipes
+function Nav() {
+  return (
+    <nav className="navbar ">
+      <ul className="navUL">
+        <li className="navLI">
+>>>>>>> 2700ce1d5eb84f2b3956b0330b069c141baeb05c
           <MDBBtn href="/">Log Out</MDBBtn>
         </li>
         <br></br>
-        <li>
+        <li className="navLI">
           <MDBBtn href="/login">Login</MDBBtn>
         </li>
         <br></br>
         <li>
-        <li>
-          <MDBBtn href="/Recipes">Recipes</MDBBtn>
-        </li>
+          <li className="navLI">
+            <MDBBtn href="/Recipes">Recipes</MDBBtn>
+          </li>
         </li>
       </ul>
     </nav>
   );
 }
 
+<<<<<<< HEAD
 
 
 // class Navbar extends Component {
@@ -69,3 +80,7 @@ function Nav() {
 // }
 
 export default Nav;
+=======
+// Export Nav
+export default Nav;
+>>>>>>> 2700ce1d5eb84f2b3956b0330b069c141baeb05c
