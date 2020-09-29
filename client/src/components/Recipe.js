@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import RecipeInfo from "./RecipeInfo";
+import RecipeInfo from "../components/RecipeInfo";
 import "bootstrap/dist/css/bootstrap.css";
 
 // Recipe function populates searched recipes and the ingredients
@@ -9,14 +9,13 @@ const Recipe = ({recipe}) => {
   const {label, image, ingredients} = recipe.recipe;
 
   return (
-    <div className="cardContainer">
-      <div className="cardBody">
+    <div className="container-sm">
+      <div className="col-sm">
         <h2>{label}</h2>
-        <img src={image} alt={label} />
-        <button onClick={() => setShow(!show)}>Ingredients</button>
+        <img src={image} alt={label} className="card-img-top"/>
         {show && <RecipeInfo ingredients={ingredients} />}
-        <div>
-          <p>
+        <div className="card-body">
+          <p className="card-text">
             <RecipeInfo ingredients={ingredients} />
           </p>
         </div>

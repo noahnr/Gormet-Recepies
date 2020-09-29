@@ -1,5 +1,6 @@
 import React from "react";
 import {MDBBtn} from "mdbreact";
+import 'bootstrap/dist/css/bootstrap.css';
 
 // Footer which contains contact information and links
 function Contacts() {
