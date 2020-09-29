@@ -1,7 +1,6 @@
 import React from "react";
 import API from "../utils/API";
 import Search from "../components/Search";
-import Nav from "../components/Nav";
 
 // Shows different recipes the user searched
 class Recipes extends React.Component {
@@ -47,7 +46,6 @@ class Recipes extends React.Component {
 
     return (
       <>
-        <Nav />
         <div className="recipies">
           <h1>Welcome {currentUserName}</h1>
           <p>Email: {currentUserEmail}</p>
