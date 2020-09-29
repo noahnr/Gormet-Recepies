@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 
+// Header which contains a welcoming message
 class Header extends Component {
   render() {
     return (
@@ -12,4 +13,5 @@ class Header extends Component {
   }
 }
 
+// Export Header
 export default Header;
